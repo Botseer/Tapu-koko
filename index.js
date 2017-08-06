@@ -8,11 +8,11 @@ client.on('ready',() => {
 });
 
 client.on('guildMemberAdd', member => {
-  member.guild.channels.get("339785028055597058").send(`Welcome ${member.user.tag}.\nWe hope you will have a great time here`);
+  member.guild.channels.get("339785028055597058").send(`Welcome ${member}, We hope you will have a great time here`);
 });
 
 client.on('guildMemberRemove', member => {
-  member.guild.channels.get("339785028055597058").send(`${member.user.tag} jsut left ${member.guild.name}`);
+  member.guild.channels.get("339785028055597058").send(`**${member.user.tag}** just left **${member.guild.name}**`);
 });
 
 process.on("unhandledRejection", err => {
